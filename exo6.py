@@ -14,7 +14,14 @@ def Res (r1,r2, u1, u2):
         r1=r1*conversion[u1]
     if u2!="k\u2126":
         r2=r2*conversion[u2]
-   
+    Reserie=r1 + r2
+    Reparallele=1/(1/r1 + 1/r2)
+    Resultat={"Reserie":Reserie, "Reparallele":Reparallele}
+    return Resultat
+
+P=Res(14,20, "k\u2126", "m\u2126")
+print(P)
+
     
     
 
